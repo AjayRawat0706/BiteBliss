@@ -25,10 +25,10 @@ server.use('*',(req,res)=>{
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/foodApp');
+  await mongoose.connect(process.env.MONGO_URL);
 console.log('database connected');
 }
 
-server.listen(8010,()=>{
+server.listen(process.env.PORT,()=>{
   console.log('server started');
 })
