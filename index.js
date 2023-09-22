@@ -25,6 +25,6 @@ server.use('/orders',orderRouter.router);
 server.use('*',(req,res)=>{
   res.sendFile(path.resolve('build','index.html'))
 })
-server.listen(8010,()=>{
+server.listen(process.env.PORT,()=>{
   console.log('server started');
 })
