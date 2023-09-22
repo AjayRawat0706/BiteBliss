@@ -1,0 +1,16 @@
+{
+    "foodItems":[
+       {
+    "id": 1,
+    "title": "Pizza",
+    "description": "Margherita pizza topped with tomato sauce, fresh mozzarella cheese, basil leaves, and sometimes grated Parmesan cheese",
+    "price": 549,
+    "discountPercentage": 12.96,
+    "rating": 4.69,
+    "category": "Fast Food",
+    "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+    "type":"veg"
+       }
+    
+    ]
+}
