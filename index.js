@@ -23,7 +23,7 @@ server.use('/items',itemRouter.router);
 server.use('/user',userRouter.router);
 server.use('/orders',orderRouter.router);
 server.use('*',(req,res)=>{
-  res.sendFile(path.resolve(__dirname,'build','index.html'))
+  res.sendFile(path.resolve('build','index.html'))
 })
 server.listen(8010,()=>{
   console.log('server started');
