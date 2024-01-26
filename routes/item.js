@@ -5,6 +5,7 @@ const router =express.Router();
 router 
 .post('/',itemController.createItem)
 .get('/',itemController.getAllItems)
+.get('/new',itemController.getNewItems)
 .get('/:id',itemController.getItem)
 .put('/:id',itemController.replaceItem)
 .patch('/:id',itemController.updateItem)

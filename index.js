@@ -10,9 +10,10 @@ const cors = require('cors');
 const server=express();
 
 server.use(express.static(path.resolve(__dirname,'build')))
-server.use(cors());
+
 server.use(express.json());
 // server.use(morgan('default'))
+server.use(cors());
 
 server.use('/items',itemRouter.router);
 server.use('/user',userRouter.router);

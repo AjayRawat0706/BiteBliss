@@ -12,6 +12,11 @@ exports.getAllItems =async(req,res)=>{
     res.json(items); 
  } 
  
+ exports.getNewItems =async(req,res)=>{
+   const items=await Item.find().sort({_id: -1}).limit(6);
+    res.json(items); 
+ } 
+ 
  exports.getItem=async(req,res)=>{
     const id = req.params.id;
     const item=await Item.find({"category":id});
